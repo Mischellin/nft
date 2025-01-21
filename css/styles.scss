@@ -111,8 +111,9 @@ main {
     margin: 0px 0px 0px 100px;
     .container {
       display: flex;
-
+      justify-content: space-between;
       .title {
+        margin: 0px 50px 0px 0px;
         hr {
           width: 40%;
           margin: 0px 0px 10px 0px;
@@ -186,14 +187,60 @@ main {
       }
       .carousel {
         display: flex;
-        .col1 {
+        justify-self: flex-end;
+
+        .column-one {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img.element {
+            width: 400px;
+            height: 420px;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+          }
           .nav-arrows {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
             box-shadow: 0 43px 34px -26px rgba(15, 15, 15, 0.12);
             background: #fcfcfd;
             border-radius: 17px;
             padding: 21px;
             width: 166px;
-            height: 68px;
+            height: 70px;
+            .devider {
+              width: 2px;
+              height: 25px;
+              background: #e6e8ec;
+            }
+          }
+        }
+        .column-two {
+          display: flex;
+          flex-direction: column;
+          margin: 0px 0px 0px -45px;
+          .decor {
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0px 0px -50px 0px;
+            .rounded-arrow {
+              margin-top: 50px;
+              img {
+                // margin: -px 0px 0px 0px;
+                transform: rotate(-3deg); /* Вращение на 45 градусов */
+              }
+            }
+            .dotted-matrix {
+              position: absolute;
+              z-index: -1;
+              top: 0;
+              right: 0;
+            }
           }
         }
       }
