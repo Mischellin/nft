@@ -129,7 +129,7 @@ input[type=range]::-moz-range-thumb {
   }
 }
 body {
-  margin: 50px 90px;
+  margin: 50px 0;
 }
 
 header {
@@ -141,11 +141,12 @@ header {
   color: #000;
 }
 header .container {
+  margin: 0px 100px;
   width: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 header .container .col1 {
   display: flex;
@@ -202,4 +203,115 @@ header .container .black-btn {
   line-height: 150%;
   text-transform: uppercase;
   color: #fff;
+}
+
+main {
+  margin: 150px 0px;
+}
+main section.hero {
+  margin: 0px 0px 0px 100px;
+}
+main section.hero .container {
+  display: flex;
+}
+main section.hero .container .title hr {
+  width: 40%;
+  margin: 0px 0px 10px 0px;
+}
+main section.hero .container .title h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  text-transform: capitalize;
+  color: #141416;
+  margin: 0px 0px 20px 0px;
+}
+main section.hero .container .title h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  text-align: justify;
+  color: #676767;
+}
+main section.hero .container .title h2 b {
+  font-weight: 600;
+  color: #141416;
+}
+main section.hero .container .title .btn {
+  display: flex;
+  margin: 45px 0px 0px 0px;
+}
+main section.hero .container .title .btn .black-btn {
+  border-radius: 16px;
+  padding: 0px 24px;
+  width: 200px;
+  height: 50px;
+  background: #141416;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #fff;
+  height: 60px;
+}
+main section.hero .container .title .btn .white-btn {
+  border-radius: 16px;
+  padding: 0px 24px;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #000;
+  border: 1.5px solid #000;
+  border-radius: 12px;
+  height: 60px;
+}
+main section.hero .container .title .btn :first-child {
+  margin: 0px 25px 0px 0px;
+}
+main section.hero .container .title .stat {
+  display: flex;
+  margin: 80px 0px 0px 0px;
+}
+main section.hero .container .title .stat .element {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0px 65px 0px 0px;
+}
+main section.hero .container .title .stat .element h1 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 125%;
+  text-align: center;
+  color: #141416;
+}
+main section.hero .container .title .stat .element h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  color: #848586;
+}
+main section.hero .container .title .stat .element:last-child {
+  margin: 0px;
+}
+main section.hero .container .carousel {
+  display: flex;
+}
+main section.hero .container .carousel .col1 .nav-arrows {
+  box-shadow: 0 43px 34px -26px rgba(15, 15, 15, 0.12);
+  background: #fcfcfd;
+  border-radius: 17px;
+  padding: 21px;
+  width: 166px;
+  height: 68px;
 }/*# sourceMappingURL=styles.css.map */
