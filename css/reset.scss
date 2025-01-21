@@ -1,0 +1,122 @@
+// reset.scss
+
+/* Удаляем все отступы и маргины */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Устанавливаем базовые стили для body */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Убираем стандартные стили для списков */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Убираем стандартные стили для ссылок */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Убираем стандартные стили для кнопок */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+/* Убираем стандартные стили для полей ввода */
+input,
+textarea {
+    border: none;
+    outline: none;
+    font: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+/* Убираем стандартные стили для таблиц */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Убираем стандартные стили для изображений */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Убираем стандартные стили для заголовков */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* Убираем стандартные стили для параграфов */
+p {
+    margin: 0;
+}
+
+/* Убираем стандартные стили для форм */
+form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Убираем стандартные стили для полей выбора */
+select {
+    border: none;
+    outline: none;
+    font: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+/* Убираем стандартные стили для ползунков */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Убираем стандартные стили для ползунков в Chrome */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Убираем стандартные стили для ползунков в Firefox */
+input[type="range"]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #000;
+    border-radius: 50%;
+    cursor: pointer;
+}
